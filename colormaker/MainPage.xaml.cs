@@ -29,6 +29,12 @@ namespace colormaker
             GreenValueLabel.Text = $"{(float)(GreenSlider.Value * 100)}%";
             BlueValueLabel.Text = $"{(float)(BlueSlider.Value * 100)}%";
         }
+
+        private async void OnCopyClicked(object sender, EventArgs e)
+        {
+            await Clipboard.SetTextAsync( _hexValue );
+        }
+            
     }
 
 }

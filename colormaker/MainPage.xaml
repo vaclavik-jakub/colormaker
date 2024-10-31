@@ -25,6 +25,14 @@
                             <Slider x:Name="BlueSlider" MaximumTrackColor="Blue" WidthRequest="550" ValueChanged="OnSliderValueChanged"></Slider>
                             <Label x:Name="BlueValueLabel" VerticalOptions="Center" WidthRequest="50" TextColor="Black"></Label>
                         </FlexLayout>
+                        <Frame>
+                            <StackLayout>
+                                <ImageButton>
+                                    
+                                </ImageButton>
+                                <Label></Label>
+                            </StackLayout>
+                        </Frame>
                     </Grid>
                 </StackLayout>
             </Frame>
