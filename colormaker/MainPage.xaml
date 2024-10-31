@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="colormaker.MainPage">
+    <ScrollView>
+        <Grid x:Name="Container" BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Frame BackgroundColor="White" CornerRadius="10" Padding="10" WidthRequest="800" HeightRequest="300">
+                <StackLayout>
+                    <Label Text="Color Maker" FontSize="Large" HorizontalOptions="Center" TextColor="Black"></Label>
+                    <Grid RowDefinitions="auto, auto, auto, auto, auto">
+                        <FlexLayout Grid.Row="1" Direction="Row" JustifyContent="SpaceBetween">
+                            <Label Text="Red" VerticalOptions="Center"></Label>
+                            <Slider x:Name="RedSlider" MaximumTrackColor="Red" WidthRequest="550" ValueChanged="OnSliderValueChanged"></Slider>
+                            <Label x:Name="RedValueLabel" VerticalOptions="Center" WidthRequest="50" TextColor="Black"></Label>
+                        </FlexLayout>
+
+                        <FlexLayout Grid.Row="2" Direction="Row" JustifyContent="SpaceBetween">
+                            <Label Text="Green" VerticalOptions="Center"></Label>
+                            <Slider x:Name="GreenSlider" MaximumTrackColor="Green" WidthRequest="550" ValueChanged="OnSliderValueChanged"></Slider>
+                            <Label x:Name="GreenValueLabel" VerticalOptions="Center" WidthRequest="50" TextColor="Black"></Label>
+                        </FlexLayout>
+
+                        <FlexLayout Grid.Row="3" Direction="Row" JustifyContent="SpaceBetween">
+                            <Label Text="Blue" VerticalOptions="Center"></Label>
+                            <Slider x:Name="BlueSlider" MaximumTrackColor="Blue" WidthRequest="550" ValueChanged="OnSliderValueChanged"></Slider>
+                            <Label x:Name="BlueValueLabel" VerticalOptions="Center" WidthRequest="50" TextColor="Black"></Label>
+                        </FlexLayout>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
